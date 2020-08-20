@@ -1,0 +1,31 @@
+@keyframes spin {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+body {
+  background-color: #1d2630; }
+
+.square {
+  width: 50%;
+  height: 0;
+  padding: 25% 0;
+  border-radius: 50%;
+  background: url("../img/clockface.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+[class*="col"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 0; }
+
+.container {
+  display: -ms-grid;
+    display-display: grid;
+  items-place: center;
+  padding: 10% 0; }
