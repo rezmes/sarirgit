@@ -3,17 +3,26 @@
 
 body
     background-color: $dark
-.square
-    // border: 1px solid red
+      min-height: 100vh
+.roundcard
+    border: 1px solid red
     width: 50%
     height: 0
     padding: 25% 0
     border-radius: 50%
-    background: url("../img/clockface.png")
-    background-size: cover
+    // background: url("../img/clockface.png")
+    // background-size: cover
+    background: rgb(63,249,220)
+    background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(63,249,220,1) 100%)
     display: flex
     align-items: center
     justify-content: center
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+    inset 0 -15px 15px rgba(255,255,255,0.05),
+    0 15px 15px rgba(0,0,0,0.03),
+    inset 0 15px 15px rgba(0,0,0,0.03)
+    
+
 [class*="col"]
     // background-color: #33b5e6
     // border: 2px solid #ffffff
@@ -25,7 +34,61 @@ body
 .container
     // background: blue
     display: -ms-grid
-        display: grid
+    display: grid
     items-place: center
-    // justify-content: center
-    padding: 10% 0
+
+
+
+
+    /* GRID STYLING */
+
+// * 
+//   box-sizing: border-box
+
+
+// body 
+
+//   background-color: #1d2630
+//   display: flex
+//   justify-content: space-between
+//   flex-wrap: wrap
+//   align-items: flex-start
+
+
+// .spinner-box 
+//   width: 300px
+//   height: 300px
+//   display: flex
+//   justify-content: center
+//   align-items: center
+//   background-color: red//transparent
+
+
+/* ALTERNATING ORBITS */
+
+// .circle-border 
+//   width: 150px
+//   height: 150px
+//   padding: 3px
+.circle-border
+    width: 10%
+    height: 0
+    padding: 10% 
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    background: rgb(63,249,220)
+    background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(63,249,220,1) 100%)
+    // animation: spin .8s linear 0s infinite
+
+
+.circle-core 
+    width: 300px
+    height: 300px
+    background-color: #1d2630
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    border: 3px solid green
